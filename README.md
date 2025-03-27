@@ -2,6 +2,8 @@
 
 _Tested with Python3.12 and spaCy v3.8.4_
 
+Preliminary work to add support for Breton in spaCy and create a NER pipeline.
+
 ## Using Breton in spaCy
 
 Copy the `br` directory to spaCy `lang` directory.
