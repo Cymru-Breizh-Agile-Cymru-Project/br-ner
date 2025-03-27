@@ -14,6 +14,10 @@ nlp = spacy.blank("br")
 doc = nlp("Demat deoc'h !")
 ```
 
+## Simple NER model for breton
+
+### Usage
+
 ```bash
 import spacy
 nlp = spacy.load("br")
@@ -21,10 +25,6 @@ doc = nlp("Demat deoc'h !")
 for ent in doc.ents:
     print(ent.text, ent.start_char, ent.end_char, ent.label_)
 ```
-
-## Simple NER model for breton
-
-### Usage
 
 ### Training
 
