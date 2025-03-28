@@ -20,8 +20,8 @@ doc = nlp("Demat deoc'h !")
 
 ```bash
 import spacy
-nlp = spacy.load("br")
-doc = nlp("Demat deoc'h !")
+nlp = spacy.load("output/model-best")
+doc = nlp("Biskoazh n’en dije kredet Frank Herbert, p’ en doa skrivet Dune e 1965, e vije bet ken berr ar prantad a chom dirak tud ar bloavezhioù 2020 a-raok kejañ gant ar mekanikoù emskiantek.")
 for ent in doc.ents:
     print(ent.text, ent.start_char, ent.end_char, ent.label_)
 ```
@@ -46,7 +46,7 @@ https://spacy.io/usage/training
 
 The language id to use for languages unsupported by spaCy is "xx".
 
-After you’ve saved the starter config to a file base_config.cfg, you can use the init fill-config command to fill in the remaining defaults. Training configs should always be complete and without hidden defaults, to keep your experiments reproducible.
+After you’ve saved the starter config to a file base_config.cfg, you can use the init fill-config command to fill in the remaining defaults.
 
 ```bash
 python3 -m spacy init fill-config base_config.cfg config.cfg
