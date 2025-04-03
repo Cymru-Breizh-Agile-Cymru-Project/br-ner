@@ -1,9 +1,7 @@
 from typing import Dict, List
-
-from ..tokenizer_exceptions import BASE_EXCEPTIONS
-from ...util import update_exc
-from ...symbols import ORTH, NORM
-
+from spacy.lang.tokenizer_exceptions import BASE_EXCEPTIONS
+from spacy.util import update_exc
+from spacy.symbols import ORTH, NORM
 
 _exc: Dict[str, List[Dict]] = {}
 

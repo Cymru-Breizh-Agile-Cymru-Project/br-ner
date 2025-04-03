@@ -1,4 +1,6 @@
-from ...language import BaseDefaults, Language
+import spacy
+from spacy.language import BaseDefaults, Language
+
 from .stop_words import STOP_WORDS
 from .tokenizer_exceptions import TOKENIZER_EXCEPTIONS
 
@@ -12,6 +14,7 @@ class BretonDefaults(BaseDefaults):
     stop_words = STOP_WORDS
 
 
+@spacy.registry.languages("br")
 class Breton(Language):
     lang = "br"
     Defaults = BretonDefaults
